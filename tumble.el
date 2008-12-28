@@ -6,6 +6,7 @@
 ;; Created: 1 Dec 2008
 ;; Version: 1.1
 ;; Keywords: tumblr
+;; Package-Requires: ((http-post-simple "1.0"))
      
 ;; This file is NOT part of GNU Emacs.
        
@@ -23,7 +24,8 @@
 ;; License along with this program; if not, write to the Free
 ;; Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
 ;; Boston, MA 02110-1301 USA
-     
+    
+ 
 ;;; Commentary:
 
 ;; Tumble is a mode for interacting with Tumblr inside Emacs. It currently
@@ -91,9 +93,6 @@
 
 ;;; Code:
 
-(let* ((tumble-dir (file-name-directory
-                    (or (buffer-file-name) load-file-name))))
-  (add-to-list 'load-path (concat tumble-dir "/vendor")))
 (require 'http-post-simple)
 
 ;; Personal information
