@@ -78,7 +78,7 @@
 ;;
 ;; Add it to your load list and require it:
 ;;
-;; (add-to-list 'load-path "~/some_directory/tumble.el")
+;; (add-to-list 'load-path "~/some_directory/tumble")
 ;; (require 'tumble)
 ;;
 ;; Open tumble.el (this file) and modify the following variables:
